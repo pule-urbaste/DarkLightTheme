@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		60DA637C26AA0DF500245AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA637B26AA0DF500245AB2 /* AppDelegate.swift */; };
 		60DA637E26AA0DF500245AB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA637D26AA0DF500245AB2 /* SceneDelegate.swift */; };
-		60DA638026AA0DF500245AB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA637F26AA0DF500245AB2 /* ViewController.swift */; };
 		60DA638326AA0DF500245AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DA638126AA0DF500245AB2 /* Main.storyboard */; };
 		60DA638526AA0DF800245AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DA638426AA0DF800245AB2 /* Assets.xcassets */; };
 		60DA638826AA0DF800245AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DA638626AA0DF800245AB2 /* LaunchScreen.storyboard */; };
+		60DA639026AA0F3D00245AB2 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA638F26AA0F3D00245AB2 /* ThemeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60DA637826AA0DF400245AB2 /* DarkLightTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLightTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DA637B26AA0DF500245AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DA637D26AA0DF500245AB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60DA637F26AA0DF500245AB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60DA638226AA0DF500245AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60DA638426AA0DF800245AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60DA638726AA0DF800245AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60DA638926AA0DF800245AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DA638F26AA0F3D00245AB2 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60CABBF526AA11100025D6D2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				60DA637B26AA0DF500245AB2 /* AppDelegate.swift */,
+				60DA637D26AA0DF500245AB2 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		60CABBF626AA112F0025D6D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60DA638F26AA0F3D00245AB2 /* ThemeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60CABBF726AA11500025D6D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60DA638126AA0DF500245AB2 /* Main.storyboard */,
+				60DA638626AA0DF800245AB2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		60DA636F26AA0DF400245AB2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +82,10 @@
 		60DA637A26AA0DF400245AB2 /* DarkLightTheme */ = {
 			isa = PBXGroup;
 			children = (
-				60DA637B26AA0DF500245AB2 /* AppDelegate.swift */,
-				60DA637D26AA0DF500245AB2 /* SceneDelegate.swift */,
-				60DA637F26AA0DF500245AB2 /* ViewController.swift */,
-				60DA638126AA0DF500245AB2 /* Main.storyboard */,
+				60CABBF526AA11100025D6D2 /* AppDelegate */,
+				60CABBF626AA112F0025D6D2 /* Controller */,
+				60CABBF726AA11500025D6D2 /* View */,
 				60DA638426AA0DF800245AB2 /* Assets.xcassets */,
-				60DA638626AA0DF800245AB2 /* LaunchScreen.storyboard */,
 				60DA638926AA0DF800245AB2 /* Info.plist */,
 			);
 			path = DarkLightTheme;
@@ -137,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DA638026AA0DF500245AB2 /* ViewController.swift in Sources */,
 				60DA637C26AA0DF500245AB2 /* AppDelegate.swift in Sources */,
+				60DA639026AA0F3D00245AB2 /* ThemeViewController.swift in Sources */,
 				60DA637E26AA0DF500245AB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
